@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpaceStore</title>
+    <meta property="og:title" content="SpaceStore" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://store.deta.dev" />
+    <meta property="og:description" content="Unofficial Deta Space App Store " />
+    <meta name="url" content="https://store.deta.dev">
+    <meta name="theme-color" content="#F478B3">
+    <link rel="icon" href="https://sleep.deta.dev/cdn/icon.png" type="image/x-icon" />
+    <meta property="og:image" content="https://sleep.deta.dev/cdn/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+
+<body>
+    <div id="main" style="margin-left: 10%; margin-right: 10%; margin-top: 15%;">
+        <h1 style="color: #F73A95;">SpaceStore</h1>
+        <h2 style="color: rgb(0, 0, 0);">Discover deta space apps</h2>
+        <div class="grid-container">
+            {% for item in items %}
+            <div class="app-card">
+                <div class="card-info">
+                    <span style="color: #F478B3; font-size: 40px;">{{ item["name"] }}</span>
+                    <span style="color: #494c59; font-size: 20px; margin-bottom: 30px;">{{ item["version"] }}</span>
+                    <a class="button" href="{{ item['url'] }}">View</a>
+                </div>
+                <div class="card-img">
+                    <img class="card-image" src="{{ item['icon'] }}" />
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div id=" footer">
+            <p style="font-size: 12px; color: #aaa; text-align: center;">Add your apps <a
+                    href="docs#/default/add_app_add_post">here</a>
+            </p>
+            <p style="font-size: 12px; color: #aaa; text-align: center;">🚀 Floating with <a
+                    href="https://deta.sh">Deta</a>
+            </p>
+        </div>
+</body>
+
+</html>

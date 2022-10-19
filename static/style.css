@@ -1,0 +1,100 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    background: #F9FAFB;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+a, u {
+    text-decoration: none !important;
+}
+
+
+.app-card {
+    width: 350px;
+    height: 130px;
+    overflow: hidden;
+    border: 1px solid;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 0 4px #F1F1F1;
+    flex-direction: row;
+    display: flex;
+}
+
+.card-info {
+    height: 100px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    margin-left: auto;
+    margin: right;
+}
+
+.card-image {
+    border-radius: 10px;
+    height: 100px;
+    margin-left: auto;
+}
+
+.button:hover {
+    transition: 0.4s linear;
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container {
+    display: inline-grid;
+}
+
+.grid-container {
+    display: grid;
+    gap: 25px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.button {
+    color: #F5F5DC;
+    background-color: #F478B3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    transition: 0.1s linear;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+hr {
+    visibility: hidden;
+}
